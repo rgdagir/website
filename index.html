@@ -1,10 +1,67 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-US">
     <head>
         <title>Raul</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/content.js"></script>
     </head>
     <body>
-        <h1>Salve salve</h1>
+        <div id="page">
+            <div id="left">
+                <div class="content"> 
+                    <h1>Raul Gallo Dagir</h1>
+                    <h6>(My <a href="#" contentEditable="false">resumé</a> was getting too messy, so I built this instead)</h6>
+                    <br></br>
+                    <h2>whoami</h2>
+                    <p> Electrical Engineering @ Stanford </p>
+                    <p> Interested in the intersection of technology, music, and cars. Love to do hands on stuff, especially if it involves messing around with cars. Also reading about crypto, libertarianism, monetary policy, and the future of civilization.</p>
+                    <p> Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry. </p>
+
+                    <br></br>
+                    <h2>jobs</h2>
+                        <div tabindex="1">
+                            <h3><a href="#" contentEditable="false" onClick="displayRight('two_sigma')">Two Sigma Securities</a></h3>
+                        </div>
+                        <div tabindex="2">
+                            <h3><a href="#" contentEditable="false" onClick="displayRight('hashdex')">Hashdex</a></h3>
+                        </div>
+                        <div class="menu">
+                            <h3><a href="#" contentEditable="false" onClick="displayRight('facebook')">Facebook</a></h3>
+                        </div>
+                        <div class="menu">
+                            <h3><a href="#" contentEditable="false" onClick="displayRight('pagarme')">Pagar.me</a></h3>
+                        </div>
+                    <br></br>
+
+                    <h2>projects</h2><!-- TODO change name to a UNIX command -->
+
+                    <br></br>
+
+                    <h2>awards</h2><!-- TODO change name to a UNIX command -->
+
+                    <br></br>
+
+                    <h2>ping</h2>
+                    me on social media if you want to connect. Here's my <a contentEditable="false" href="https://www.linkedin.com/in/rauldagir">linkedin</a>, and my <a contentEditable="false" href="https://www.twitter.com/r__ld___r">twitter</a>. Otherwise, send me an email at X@stanford.edu, where X is my first and middle initial followed by my last name.
+                </div>
+            </div>
+
+
+            <div id="right">
+                <div class="content"> 
+                </div>
+            </div>
+        </div>
+        
     </body>
+    <script>
+        function displayRight(key) {
+            // maybe use appendChild here?
+            let rightCol = document.getElementById("right").getElementsByClassName("content")[0];
+
+            rightCol.innerHTML = website_content[key];
+        }
+    </script>
 </html>
 

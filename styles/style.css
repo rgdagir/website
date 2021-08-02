@@ -1,0 +1,61 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: inline;
+    float: none;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+#right {
+    background-color: #111111;
+    float: right;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+a {
+    color:#ffffff;
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+a:hover {
+    color:#000000;
+    text-decoration: underline;
+    background-color:#ffffff;
+
+}
+
+
+div:focus {
+    background-color: #111111;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #right {
+        width: 100%;
+    }
+    #left {
+        width: 100%;
+    }
+}
