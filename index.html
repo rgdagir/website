@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Raul</title>
+        <title>Raul's Home</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/content.js"></script>
@@ -12,29 +13,55 @@
                 <div class="content"> 
                     <h1>Raul Gallo Dagir</h1>
                     <h6>(My <a href="#" contentEditable="false">resumé</a> was getting too messy, so I built this instead)</h6>
-                    <br></br>
+                    <br>
                     <h2>whoami</h2>
                     <p> Electrical Engineering @ <a href="https://www.stanford.edu">Stanford</a></p>
                     <p> Interested in the intersection of technology, music, and cars. Love to do hands on stuff, especially if it involves messing around with cars. Also reading about crypto, libertarianism, monetary policy, and the future of civilization.</p>
-                    <p> Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry. </p>
-
-                    <br></br>
+                    <p> Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry! </p>
+                    <br>
                     <h2>jobs</h2>
                         <ul class="sidenav">
-                            <li><h3><a href="#" id="two_sigma" contentEditable="false" onClick="displayRight(this.id)">Two Sigma Securities</a></h3></li>
+                            <li><h3><a href="#" id="two_sigma" contentEditable="false" onClick="displayRight(this.id)">Two Sigma</a></h3></li>
                             <li><h3><a href="#" id="hashdex" contentEditable="false" onClick="displayRight(this.id)">Hashdex</a></h3></li>
                             <li><h3><a href="#" id="facebook" contentEditable="false" onClick="displayRight(this.id)">Facebook</a></h3></li>
                             <li><h3><a href="#" id="pagarme" contentEditable="false" onClick="displayRight(this.id)">Pagar.me</a></h3></li>
                         </ul>
-                    <br></br>
+                    <br>
 
-                    <h2>projects</h2><!-- TODO change name to a UNIX command -->
+                    <h2>pslog</h2>
+                        <ul class="sidenav">
+                            <!-- Cars -->
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">1973 VW Beetle</a></h3></li>
+                            <!-- Hardware -->
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Sobel filter hardware accelerator</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">MIPS Processor on an FPGA</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Audio Synthesizer</a></h3></li>
+                            <!-- Music -->
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)"><q>The Coded Track</q></a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">BeatMask</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Spinnin'</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">MUSIC 250A Projects</a></h3></li>
+                            <!-- Rest -->
 
-                    <br></br>
+                        </ul>
+                    <br>
 
-                    <h2>awards</h2><!-- TODO change name to a UNIX command -->
+                    <h2>cat awards.log</h2>
+                        <ul class="sidenav">
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Facebook University Best Android App - Blind8 App</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Red Bull <q>Hack the Hits</q> Hackathon Winner</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">AB InBev's Hack the World Hackathon Winner</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Unofficial World Record for Longest Latex Baloon flight</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Fundação Estudar Fellow</a></h3></li>
+                            <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Clara Lionel Foundation Scholar</a></h3></li>
+                        </ul>
 
-                    <br></br>
+
+                    <br>
+
+                    <h2>read</h2><!-- TODO change name to a UNIX command -->
+
+                    <br>
 
                     <h2>ping</h2>
                     me on social media if you want to connect. Here's my <a contentEditable="false" href="https://www.linkedin.com/in/rauldagir">linkedin</a>, and my <a contentEditable="false" href="https://www.twitter.com/r__ld___r">twitter</a>. Otherwise, send me an email at X@stanford.edu, where X is my first and middle initial followed by my last name.
@@ -44,12 +71,10 @@
 
             <div id="right">
                 <div class="content"> 
-                    <h3>Click on a link to see more information in this tab</h3>
+                    <h3>Click on a <a href="#" contentEditable="false">link</a> to see more information in this tab</h3>
                 </div>
             </div>
         </div>
-        
-    </body>
     <script>
         function displayRight(id) {
             // unmark current active tab
@@ -65,5 +90,8 @@
             rightCol.innerHTML = website_content[id];
         }
     </script>
+        
+    </body>
+
 </html>
 

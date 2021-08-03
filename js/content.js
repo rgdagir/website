@@ -2,7 +2,7 @@ var website_content = {
         "long_bio": `<p>long_bio</p>`,
         "bio": `<p>bio</p>`,
         "two_sigma": `
-            <h3><a href="https://www.twosigma.com" contentEditable="false" target="_blank">Two Sigma</a></h3>
+            <h3><a href="https://www.twosigma.com" contentEditable="false" target="_blank">Two Sigma Securities</a></h3>
             <h4>Hardware Engineering Intern - July to September/2021</h4>
             <ul>
                 <li>Working on a novel market data receiver module on an FPGA. Instead of SystemVerilog, this project is being developed using Xilinx's Vitis HLS (high level synthesis) tools and C++.</li>
@@ -28,10 +28,11 @@ var website_content = {
                 <li>The project was selected as the best Android app of the FBU (Facebook University for Engineers) internship program, which led to a private presentation of the project to Mark Zuckerberg.</li>
             </ul>`,
         "pagarme":`
-            <h3><a href="https://www.pagar.me/" contentEditable="false" target="_blank">Pagar.e</a></h3>
+            <h3><a href="https://www.pagar.me/" contentEditable="false" target="_blank">Pagar.me</a></h3>
             <h4>Operations Intern - March to July/2017</h4>
             <ul>
                 <li>Wrote Python scripts to automate some of the company's internal tasks, such as chargeback conciliation and sending automatic emails for clients in order to verify and activate accounts. Also worked with monitoring the company's operation using SQL, MongoDB and data analysis on the database.</li>
-            </ul>`
+            </ul>`,
+        "undefined": `<h3>Click on a <a href="#" contentEditable="false">link</a> to see more information in this tab</h3>`
 }
 
