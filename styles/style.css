@@ -1,7 +1,10 @@
 body {
   background-color: #000000;
-  color: #ffffff;
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+    padding: 0px 20px 0px 0px;
 }
 
 #page {
@@ -17,19 +20,23 @@ body {
     width: 50%;
     height: 100%;
     overflow: auto;
+    color: #ffffff;
+
 }
 
 
 #right {
-    background-color: #111111;
+    background-color: #525252;
     float: right;
     width: 50%;
     height: 100%;
     overflow: auto;
+    color: #ffffff;
+
 }
 
 .content {
-    padding: 20px;
+    padding: 0px 0px 0px 20px;
 }
 
 a {
@@ -42,11 +49,23 @@ a:hover {
     color:#000000;
     text-decoration: underline;
     background-color:#ffffff;
-
+    height:100%;
+    width:100%;
+    display:inline;
 }
 
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
-div:focus {
-    background-color: #111111;
+.active {
+  background-color: #525252;
+  color: #ffffff;
+  display:block;
+  height:100%
+  width:100%
 }
 

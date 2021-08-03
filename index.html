@@ -14,24 +14,18 @@
                     <h6>(My <a href="#" contentEditable="false">resumé</a> was getting too messy, so I built this instead)</h6>
                     <br></br>
                     <h2>whoami</h2>
-                    <p> Electrical Engineering @ Stanford </p>
+                    <p> Electrical Engineering @ <a href="https://www.stanford.edu">Stanford</a></p>
                     <p> Interested in the intersection of technology, music, and cars. Love to do hands on stuff, especially if it involves messing around with cars. Also reading about crypto, libertarianism, monetary policy, and the future of civilization.</p>
                     <p> Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry. </p>
 
                     <br></br>
                     <h2>jobs</h2>
-                        <div tabindex="1">
-                            <h3><a href="#" contentEditable="false" onClick="displayRight('two_sigma')">Two Sigma Securities</a></h3>
-                        </div>
-                        <div tabindex="2">
-                            <h3><a href="#" contentEditable="false" onClick="displayRight('hashdex')">Hashdex</a></h3>
-                        </div>
-                        <div class="menu">
-                            <h3><a href="#" contentEditable="false" onClick="displayRight('facebook')">Facebook</a></h3>
-                        </div>
-                        <div class="menu">
-                            <h3><a href="#" contentEditable="false" onClick="displayRight('pagarme')">Pagar.me</a></h3>
-                        </div>
+                        <ul class="sidenav">
+                            <li><h3><a href="#" id="two_sigma" contentEditable="false" onClick="displayRight(this.id)">Two Sigma Securities</a></h3></li>
+                            <li><h3><a href="#" id="hashdex" contentEditable="false" onClick="displayRight(this.id)">Hashdex</a></h3></li>
+                            <li><h3><a href="#" id="facebook" contentEditable="false" onClick="displayRight(this.id)">Facebook</a></h3></li>
+                            <li><h3><a href="#" id="pagarme" contentEditable="false" onClick="displayRight(this.id)">Pagar.me</a></h3></li>
+                        </ul>
                     <br></br>
 
                     <h2>projects</h2><!-- TODO change name to a UNIX command -->
@@ -50,17 +44,25 @@
 
             <div id="right">
                 <div class="content"> 
+                    <h3>Click on a link to see more information in this tab</h3>
                 </div>
             </div>
         </div>
         
     </body>
     <script>
-        function displayRight(key) {
+        function displayRight(id) {
+            // unmark current active tab
+            let active_collection = document.getElementsByClassName("active");
+            for (item of active_collection){
+                item.classList.remove("active");
+            }
+            // mark tab as active
+            document.getElementById(id).classList.add("active");
             // maybe use appendChild here?
             let rightCol = document.getElementById("right").getElementsByClassName("content")[0];
 
-            rightCol.innerHTML = website_content[key];
+            rightCol.innerHTML = website_content[id];
         }
     </script>
 </html>
