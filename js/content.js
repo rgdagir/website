@@ -33,6 +33,6 @@ var website_content = {
             <ul>
                 <li>Wrote Python scripts to automate some of the company's internal tasks, such as chargeback conciliation and sending automatic emails for clients in order to verify and activate accounts. Also worked with monitoring the company's operation using SQL, MongoDB and data analysis on the database.</li>
             </ul>`,
-        "undefined": `<h3>Click on a <a href="#" contentEditable="false">link</a> to see more information in this tab</h3>`
+        "undefined": `<h3>Click on a <a href="#" contentEditable="false">link</a> to see more information in this tab or to open up a collapsible menu</h3>`
 }
 
