@@ -21,7 +21,6 @@ p {
     height: 100%;
     overflow: auto;
     color: #ffffff;
-
 }
 
 
@@ -58,6 +57,19 @@ ul.sidenav {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.collapsibleContent {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 #right li {
@@ -72,3 +84,15 @@ ul.sidenav {
   width:100%
 }
 
+.collapsible {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 16px;
+  font-weight:bolder;
+}

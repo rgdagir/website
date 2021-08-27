@@ -13,13 +13,19 @@
                 <div class="content"> 
                     <h1>Raul Gallo Dagir</h1>
                     <h6>(My <a href="#" contentEditable="false">resumé</a> was getting too messy, so I built this instead)</h6>
+
                     <br>
-                    <h2>whoami</h2>
-                    <p> Electrical Engineering @ <a href="https://www.stanford.edu">Stanford</a></p>
-                    <p> Interested in the intersection of technology, music, and cars. Love to do hands on stuff, especially if it involves messing around with cars. Also reading about crypto, libertarianism, monetary policy, and the future of civilization.</p>
-                    <p> Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry! </p>
+
+                    <button type="button" class=collapsible><h2><a href="#">whoami</a></h2></button>
+                        <div class="collapsibleContent">
+                            <p>Electrical Engineering @ <a href="https://www.stanford.edu">Stanford</a></p>
+                            <p>Interested in the intersection of technology, music, and cars. Love to do hands on stuff, especially if it involves messing around with cars. Also reading about crypto, libertarianism, monetary policy, and the future of civilization.</p>
+                            <p>Been working with hardware accelerators on FPGAs for some time now. In school, I have built sound synthesizers as well as sobel filter and SHA-256 accelerators. For work at Two Sigma, I have built network testing and routing modules on FPGAs, focusing on low-latency applications. Still looking forward to making a career in racing or in the mobility industry! </p>
+                        </div>
                     <br>
-                    <h2>jobs</h2>
+
+                    <button type="button" class=collapsible><h2><a href="#">jobs</a></h2></button>
+
                         <ul class="sidenav">
                             <li><h3><a href="#" id="two_sigma" contentEditable="false" onClick="displayRight(this.id)">Two Sigma</a></h3></li>
                             <li><h3><a href="#" id="hashdex" contentEditable="false" onClick="displayRight(this.id)">Hashdex</a></h3></li>
@@ -28,7 +34,7 @@
                         </ul>
                     <br>
 
-                    <h2>pslog</h2>
+                    <button type="button" class=collapsible><h2><a href="#">pslog</a></h2></button>
                         <ul class="sidenav">
                             <!-- Cars -->
                             <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">1973 VW Beetle</a></h3></li>
@@ -55,8 +61,6 @@
                             <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Fundação Estudar Fellow</a></h3></li>
                             <li><h3><a href="#" contentEditable="false" onClick="displayRight(this.id)">Clara Lionel Foundation Scholar</a></h3></li>
                         </ul>
-
-
                     <br>
 
                     <h2>read</h2><!-- TODO change name to a UNIX command -->
@@ -64,7 +68,7 @@
                     <br>
 
                     <h2>ping</h2>
-                    me on social media if you want to connect. Here's my <a contentEditable="false" href="https://www.linkedin.com/in/rauldagir">linkedin</a>, and my <a contentEditable="false" href="https://www.twitter.com/r__ld___r">twitter</a>. Otherwise, send me an email at X@stanford.edu, where X is my first and middle initial followed by my last name.
+                    <p>me on social media if you want to connect. Here's my <a contentEditable="false" href="https://www.linkedin.com/in/rauldagir">linkedin</a>, and my <a contentEditable="false" href="https://www.twitter.com/r__ld___r">twitter</a>. Otherwise, send me an email at X@stanford.edu, where X is my first and middle initial followed by my last name.</p>
                 </div>
             </div>
 
@@ -75,6 +79,9 @@
                 </div>
             </div>
         </div>
+    
+    <!-- SCRIPTS -->
+    <!-- displaying content on the right tab of the website-->
     <script>
         function displayRight(id) {
             // unmark current active tab
@@ -90,8 +97,25 @@
             rightCol.innerHTML = website_content[id];
         }
     </script>
+
+    <!-- collapsible content -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
         
     </body>
 
 </html>
-
