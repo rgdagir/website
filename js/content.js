@@ -21,10 +21,12 @@ var website_content = {
             <h3><a href="https://about.facebook.com/" contentEditable="false" target="_blank" rel="noopener noreferrer">Facebook</a></h3>
             <h4>Software Engineering Intern (FBU program) - June to August/2018</h4>
             <ul>
-                <li>Using Java and Node.js, developed a blind dating app, Blind8, for Android mobile devices.</li>
+                <li>Using Java and Node.js, developed a blind matchmaking app, Blind8, for Android mobile devices.</li>
                 <br></br>
                 <li>The project was selected as the best Android app of the FBU (Facebook University for Engineers) internship program, which led to a private presentation of the project to Mark Zuckerberg.</li>
-            </ul>`,
+                </ul>
+            <img src="files/zuck.jpg" alt="/">
+            `,
         "pagarme":`
             <h3><a href="https://www.pagar.me/" contentEditable="false" target="_blank" rel="noopener noreferrer">Pagar.me</a></h3>
             <h4>Operations Intern - March to July/2017</h4>
@@ -133,11 +135,13 @@ var website_content = {
                             <iframe class="video" src="https://www.youtube.com/embed/sxIkCh4p7vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     `,
-        "fbu":`<h3>Facebook University Best Android App - Blind8</h3>
+        "fbu":`<h3>Facebook University Best Android App</h3>
                 <h4>August/2018</h2>
-                    <p>Inside the Android Profile Team (manager: Alejandro Martín Nuñez), my team and I used Java and Node.js, to develop a blind dating app, Blind8, for Android mobile devices.</p>
+                    <p>Inside the Android Profile Team (manager: Alejandro Martín Nuñez), my team and I used Java and Node.js, to develop a blind matchmaking app, Blind8, for Android mobile devices.</p>
                     <p>The project was selected as the best Android app of the FBU (Facebook University for Engineers) internship program, which led to a private presentation of the project to Mark Zuckerberg.</p>
-                    <p>Check out the code <a href="https://github.com/rgdagir/bdate" target="_blank" rel="noopener noreferrer">here.</a></p>`,
+                    <p>Check out the code <a href="https://github.com/rgdagir/bdate" target="_blank" rel="noopener noreferrer">here.</a></p>
+                    <img src="files/zuck.jpg" alt="/">
+                    `,
         "redbull":`<h3>Red Bull "Hack the Hits" Hackathon Winner</h3>
                     <p>
                         For the 2018 edition of the highly-selective music+tech hackathon Hack The Hits, hosted by Red Bull, my team (Claire Lim and Alexina Boudreaux-Allen) won the contest with our project BeatMask, which is featured in the "pslog" menu in this website. Basically, BeatMask is a spray painting mask that allows beatboxers to convert their impromptu vocal beats into MIDI clips within Ableton in real time. 
