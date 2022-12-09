@@ -1,4 +1,11 @@
 var website_content = {
+        "hashdex_ft": `
+            <h3><a href="https://www.hashdex.com" contentEditable="false" target="_blank" rel="noopener noreferrer">Hashdex</a></h3>
+            <h4>Software Engineer - March to June/2022</h4>
+            <ul>
+                <li>Part of Hashdex's Platform team, responsible for the core infrastructure.</li>
+            </ul>
+        `,
         "two_sigma": `
             <h3><a href="https://www.twosigma.com" contentEditable="false" target="_blank" rel="noopener noreferrer">Two Sigma Securities</a></h3>
             <h4>Hardware Engineering Intern - July to September/2021</h4>
@@ -16,7 +23,8 @@ var website_content = {
                 <li>Developed Hashdex’s Order Management System and its exchange integrations from scratch, using C# (.NET). Built the system focusing on quick integration with new exchanges, thus using a hexagonal (“ports and adapters”) architecture.</li>
                 <br></br>
                 <li>Performed a deep analysis of Bitcoin’s on-chain data, using SQL with Google BigQuery to process over 500 GB of transaction data in order to calculate the network’s realized cap (coinmetrics.io/realized-capitalization) and liveliness, key metrics to understand the market a  nd shift the fund’s strategy to active trading.</li>
-            </ul>`,
+                </ul>
+            `,
         "facebook":`
             <h3><a href="https://about.facebook.com/" contentEditable="false" target="_blank" rel="noopener noreferrer">Facebook</a></h3>
             <h4>Software Engineering Intern (FBU program) - June to August/2018</h4>
